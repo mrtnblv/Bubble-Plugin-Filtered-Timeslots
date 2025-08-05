@@ -1,0 +1,60 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 20,
+        "width": 20
+    },
+    "display": "Filtered Timeslots",
+    "fields": {
+        "AAD": {
+            "caption": "Date",
+            "doc": "Generate a list of time for a given date.",
+            "editor": "DynamicValue",
+            "name": "startdate",
+            "rank": 0,
+            "value": "date"
+        },
+        "AAE": {
+            "caption": "Interval (minutes)",
+            "default_val": 30,
+            "doc": "Interval in minutes between generated timestamps.",
+            "editor": "DynamicValue",
+            "name": "interval",
+            "optional": true,
+            "rank": 1,
+            "value": "number"
+        },
+        "AAF": {
+            "caption": "Ranges",
+            "default_val": "06:00-09:00,12:00-18:00",
+            "doc": "Time ranges  in 24-hour format (HH:MM-HH:MM), separated by commas.",
+            "editor": "DynamicValue",
+            "name": "ranges",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAH": {
+            "caption": "Excluded Ranges",
+            "default_val": "12:30-13:00,16:00-17:00",
+            "doc": "Time ranges to exclude from the result, in 24-hour format (HH:MM-HH:MM), separated by commas.",
+            "editor": "DynamicValue",
+            "name": "excludedranges",
+            "rank": 3,
+            "value": "text"
+        }
+    },
+    "icon": "ion-ios-calendar-outline",
+    "platform_type": "web",
+    "states": {
+        "AAG": {
+            "caption": "list of time (date)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "list_of_times",
+            "value": "date"
+        }
+    }
+}

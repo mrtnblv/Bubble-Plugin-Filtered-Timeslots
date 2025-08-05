@@ -1,0 +1,12 @@
+{
+    "categories": {
+        "0": "calendar",
+        "1": "productivity",
+        "2": "technical",
+        "3": "location"
+    },
+    "description": "This plugin generates a list of timestamps based on a starting date, a time interval, specified time ranges, and optional excluded ranges. The timestamps are filtered to ensure they fall within the provided time ranges (24-hour format) while avoiding any excluded ranges.\n\nPerfect for scheduling, time slot creation, or custom date generation with advanced constraints.\n\nResult: The output is a list of dates that match the specified criteria.",
+    "image": "//meta-q.cdn.bubble.io/f1736590090347x361632021477212600/image%20%281%29.png",
+    "license": "open_source",
+    "name": "Filtered Timeslots"
+}
